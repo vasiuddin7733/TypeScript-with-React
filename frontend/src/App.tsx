@@ -1,26 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Home from './components/home'
+import Service from './containers/service'
+import About from './containers/about'
+import Contact from './containers/contact'
+import Form from './containers/form'
+import Client from './containers/apolloClient'
+import { NotFound } from './containers/notFound'
+import { Routes, Route } from 'react-router-dom'
 
-function App() {
+function Router() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p className='text-pink-500 text-6xl'>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Routes>
+      <Route index element={<Home />} />
+      <Route path="/service" element={<Service />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/contact" element={<Contact />} />
+      <Route path="/form" element={<Form />} />
+      <Route path="/client" element={<Client />} />
+      <Route path="*" element={<NotFound />} />
+    </Routes>
+  )
 }
 
-export default App;
+export default Router
