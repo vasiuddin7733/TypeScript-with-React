@@ -11,6 +11,7 @@ const Contact = () => {
   if (isLoading) return <p>Loading</p>
   if (error) return <p>An error occurred</p>
 
+  console.log("data",data)
   return (
     <PageLayout>
       <div className="text-3xl flex flex-col bg-contact_bg bg-no-repeat h-[45rem] bg-cover">

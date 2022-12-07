@@ -20,6 +20,8 @@ const ApolloClient = () => {
     data: locations,
   } = useQuery(GET_LOCATIONS)
 
+  console.log("location",locations)
+
   if (locaton_loading) return <p>Loading...</p>
   if (locaton_error) return <p>Error : {locaton_error.message}</p>
   return (
@@ -35,6 +37,7 @@ const ApolloClient = () => {
         </a>
       </div>
       <div>
+        <div>{locations?.description}</div>
         {/* {locations.locations.map(({ id, name, description, photo }) => (
           <div key={id} className="flex flex-col justify-center items-center">
             <h3>{name}</h3>
