@@ -11,7 +11,7 @@ const About = () => {
   if (isLoading) return <p>Loading</p>
   if (error) return <p>An error occurred</p>
 
-  const aboutInfor = aboutInfo.slice(0, 9)
+  
   console.log('about', aboutInfo)
 
   return (
@@ -20,7 +20,7 @@ const About = () => {
         <div className="grid space-y-16">
           <p className="">About page</p>
         </div>
-        <div className="flex justify-center items-center my-8">
+        <div className="flex flex-col justify-center items-center my-8">
           <table>
             <tr className="w-full">
               <th>id</th>
@@ -39,6 +39,11 @@ const About = () => {
               </tr>
             ))} */}
           </table>
+          <div>
+        <h3>A Simple React Component Example with Typescript</h3>
+        <p>This component shows the Logrocket logo.</p>
+        <p>For more info on Logrocket, please visit https://logrocket.com </p>
+      </div>
         </div>
       </div>
       <div className="flex justify-center pt-10">
