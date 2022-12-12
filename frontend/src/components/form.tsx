@@ -31,15 +31,19 @@ const Form = () => {
               <th>email</th>
               <th>location</th>
             </tr>
-            {/* {firstForm?.map((form) => (
-              <tr  className="w-full text-center">
+            {firstForm?.map((form: {  id: string; userId?:string; title?:string; email?:string;  },index:number) => {
+              return(
+                <tr  className="w-full text-center" key={index}>
                 <td>{form?.id}</td>
-                <td>{form[0]?.map((form0) => form0.userId)}</td>
-                <td>{form?.username}</td>
+                <td>{form?.userId}</td>
+                <td>{form?.title}</td>
+
                 <td>{form?.email}</td>
-                <td>{form?.address?.street}</td>
               </tr>
-            ))} */}
+              )
+            },
+           
+            )}
           </table>
         </div>
       </div>
