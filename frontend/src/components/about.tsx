@@ -11,8 +11,11 @@ const About = () => {
   if (isLoading) return <p>Loading</p>
   if (error) return <p>An error occurred</p>
 
-  
-  console.log('about', aboutInfo)
+
+  console.log('aboutInfo', aboutInfo)
+  const aboutInformation = aboutInfo?.slice(0, 8);
+
+  type about = { id: string; name?: string; username?: string; email: string; address: { street: string } }
 
   return (
     <PageLayout>
@@ -28,22 +31,23 @@ const About = () => {
               <th>username</th>
               <th>email</th>
               <th>location</th>
+
             </tr>
-            {/* {aboutInfor?.map((contact) => (
-              <tr className="w-full text-center">
-                <td>{contact?.id}</td>
-                <td>{contact?.name}</td>
-                <td>{contact?.username}</td>
-                <td>{contact?.email}</td>
-                <td>{contact?.address?.street}</td>
-              </tr>
-            ))} */}
+            {aboutInformation?.map((about: about, index: number) => {
+              return (
+                <tr className="w-full text-center" key={index}>
+                  <td>{about?.id}</td>
+                  <td>{about?.username}</td>
+                  <td>{about?.name}</td>
+                  <td>{about?.email}</td>
+                  <td>{about?.address?.street}</td>
+                </tr>
+              )
+            },
+            )}
           </table>
           <div>
-        <h3>A Simple React Component Example with Typescript</h3>
-        <p>This component shows the Logrocket logo.</p>
-        <p>For more info on Logrocket, please visit https://logrocket.com </p>
-      </div>
+          </div>
         </div>
       </div>
       <div className="flex justify-center pt-10">
