@@ -20,7 +20,7 @@ const ApolloClient = () => {
     data: locations,
   } = useQuery(GET_LOCATIONS)
 
-  console.log("location",locations)
+  console.log("location", locations)
 
   if (locaton_loading) return <p>Loading...</p>
   if (locaton_error) return <p>Error : {locaton_error.message}</p>
