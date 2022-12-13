@@ -55,6 +55,11 @@ const ApolloClient = () => {
           }
           )}
         </div>
+        <div className="flex justify-center pt-10">
+          <a className="border-blue-900 border-2 px-10 rounded-full" href="/">
+            Home page
+          </a>
+        </div>
       </div>
     </PageLayout >
   )
