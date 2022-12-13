@@ -13,13 +13,13 @@ const Form = () => {
   const { isLoading, error, data: formData } = useQuery(['contacts'], fetcher)
   if (isLoading) return <p>Loading</p>
   if (error) return <p>An error occurred</p>
-  const firstForm = formData.slice(0, 10)
+  const firstForm = formData.slice(0, 3)
   console.log({ formData })
 
   return (
     <PageLayout>
-      <div className="text-blue-900 text-4xl flex justify-center items-center text-center mt-20 bg-service_bg bg-no-repeat h-[45rem] bg-cover">
-        <div className="grid space-y-16">
+      <div className="text-blue-900 text-4xl flex flex-col justify-center items-center text-center mt-20 bg-service_bg bg-no-repeat h-[45rem] bg-cover">
+        <div className="grid pb-10">
           <p>Service page</p>
         </div>
         <div className="flex justify-center">
@@ -28,16 +28,15 @@ const Form = () => {
               <th>id</th>
               <th>name</th>
               <th>username</th>
-              <th>email</th>
-              <th>location</th>
+              <th>body</th>
             </tr>
-            {firstForm?.map((form: { id: string; userId?: string; title?: string; email?: string; }, index: number) => {
+            {firstForm?.map((form: { id: string; userId?: string; title?: string; body?: string; }, index: number) => {
               return (
                 <tr className="w-full text-center" key={index}>
                   <td>{form?.id}</td>
                   <td>{form?.userId}</td>
                   <td>{form?.title}</td>
-                  <td>{form?.email}</td>
+                  <td>{form?.body}</td>
                 </tr>
               )
             },
