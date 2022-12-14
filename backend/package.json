@@ -1,0 +1,14 @@
+{
+  "name": "backend",
+  "private": true,
+  "scripts": {
+    "clean": "rm -rf node_modules && rm -rf yarn.lock && rm -rf package-json.lock",
+    "start": "yarn nodemon ./src/server.js"
+  },
+  "dependencies": {
+    "fastify": "^4.10.2",
+    "graphql": "^16.6.0",
+    "mercurius": "^11.4.0",
+    "nodemon": "^2.0.20"
+  }
+}
