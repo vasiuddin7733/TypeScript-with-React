@@ -1,7 +1,7 @@
 import React from 'react'
 import { PageLayout } from '../layout'
 import { useQuery } from '@tanstack/react-query'
-import './styles.css'
+import '../styles/styles.css'
 
 const fetcher = () =>
   fetch('https://jsonplaceholder.typicode.com/users').then((res) => res.json())

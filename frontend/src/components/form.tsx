@@ -1,6 +1,6 @@
 import { PageLayout } from '../layout'
 import { useQuery } from '@tanstack/react-query'
-import './styles.css'
+import '../styles/styles.css'
 import axios from 'axios'
 
 const fetcher = () =>

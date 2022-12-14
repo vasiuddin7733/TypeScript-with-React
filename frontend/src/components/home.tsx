@@ -1,5 +1,7 @@
 import { PageLayout } from '../layout'
 import { useQuery } from '@tanstack/react-query'
+import 'react-calendar/dist/Calendar.css';
+
 
 const fetcher = () =>
   fetch('https://api.chucknorris.io/jokes/random').then((res) => res.json())
@@ -57,6 +59,12 @@ const Home = () => {
             href="/client"
           >
             Client page
+          </a>
+          <a
+            className="border-green-500 border-2 px-5 rounded-full"
+            href="/calendar"
+          >
+            Calendar page
           </a>
         </div>
       </PageLayout>
