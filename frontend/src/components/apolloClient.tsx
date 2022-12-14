@@ -26,7 +26,7 @@ const ApolloClient = () => {
   if (locaton_error) return <p>Error : {locaton_error.message}</p>
   return (
     <PageLayout>
-      <div className="text-blue-900 text-4xl flex justify-center items-center text-center mt-20 bg-service_bg bg-no-repeat bg-cover">
+      <div className="text-4xl flex justify-center items-center text-center mt-20 bg-service_bg bg-no-repeat bg-cover">
         <p className='pb-10'>Client page</p>
       </div>
       <div>
@@ -36,6 +36,7 @@ const ApolloClient = () => {
             return (
               <div className='flex flex-col justify-center items-center border-2 border-green-500 m-5' key={location?.id}>
                 <h3>{location?.name}</h3>
+                <h2>{`Id ${location?.id}`}</h2>
                 <img
                   width="600"
                   height="250"
