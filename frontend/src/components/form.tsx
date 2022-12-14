@@ -1,4 +1,3 @@
-import React from 'react'
 import { PageLayout } from '../layout'
 import { useQuery } from '@tanstack/react-query'
 import './styles.css'
