@@ -50,8 +50,8 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-center pt-10">
-        <a className="border-blue-900 border-2 px-10 rounded-full" href="/">
+      <div className="flex justify-center items-center pt-10">
+        <a className="border-green-500 border-2 px-10 py-2 rounded-full text-green-500 bg-gradient-to-tr from-[#DF1279] to to-[#007FAD]" href="/">
           Home page
         </a>
       </div>
