@@ -40,7 +40,7 @@ const Home = () => {
             Form page
           </a>
           <a className="border-green-500 border-2 px-10 py-2 rounded-full text-green-500 bg-gradient-to-tr from-[#DF1279] to to-[#007FAD]" href="/about">
-            About page
+            Calculate page
           </a>
           <a className="border-green-500 border-2 px-10 py-2 rounded-full text-green-500 bg-gradient-to-tr from-[#DF1279] to to-[#007FAD]" href="/client">
             Client page

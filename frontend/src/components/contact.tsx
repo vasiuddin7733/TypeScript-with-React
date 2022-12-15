@@ -29,7 +29,7 @@ const Contact = () => {
               <th>email</th>
               <th>location</th>
             </tr>
-            {/* {data?.map((contact, index) => (
+            {data?.map((contact: { id: string, name: string, username: string, email: string, address: { street: string } }, index: number) => (
               <tr key={index} className="w-full text-center">
                 <td>{contact?.id}</td>
                 <td>{contact?.name}</td>
@@ -37,7 +37,7 @@ const Contact = () => {
                 <td>{contact?.email}</td>
                 <td>{contact?.address?.street}</td>
               </tr>
-            ))} */}
+            ))}
           </table>
         </div>
       </div>

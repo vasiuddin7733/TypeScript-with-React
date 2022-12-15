@@ -2,7 +2,7 @@ import { PageLayout } from '../layout'
 import { useQuery } from '@tanstack/react-query'
 
 const fetcher = () =>
-  fetch('https://random-facts2.p.rapidapi.com/getfact').then((res) =>
+  fetch('https://random-facts1.p.rapidapi.com').then((res) =>
     res.json()
   )
 
