@@ -30,40 +30,22 @@ const Home = () => {
           </div>
         </div>
         <div className="flex justify-evenly pt-10">
-          <a
-            className="border-green-500 border-2 px-5 rounded-full"
-            href="/service"
-          >
+          <a className="border-green-500 border-2 px-10 py-2 rounded-full text-green-500 bg-gradient-to-tr from-[#DF1279] to to-[#007FAD]" href="/service">
             Service page
           </a>
-          <a
-            className="border-green-500 border-2 px-5 rounded-full"
-            href="/contact"
-          >
+          <a className="border-green-500 border-2 px-10 py-2 rounded-full text-green-500 bg-gradient-to-tr from-[#DF1279] to to-[#007FAD]" href="/contact">
             Contact page
           </a>
-          <a
-            className="border-green-500 border-2 px-5 rounded-full"
-            href="/form"
-          >
+          <a className="border-green-500 border-2 px-10 py-2 rounded-full text-green-500 bg-gradient-to-tr from-[#DF1279] to to-[#007FAD]" href="/form">
             Form page
           </a>
-          <a
-            className="border-green-500 border-2 px-5 rounded-full"
-            href="/about"
-          >
+          <a className="border-green-500 border-2 px-10 py-2 rounded-full text-green-500 bg-gradient-to-tr from-[#DF1279] to to-[#007FAD]" href="/about">
             About page
           </a>
-          <a
-            className="border-green-500 border-2 px-5 rounded-full"
-            href="/client"
-          >
+          <a className="border-green-500 border-2 px-10 py-2 rounded-full text-green-500 bg-gradient-to-tr from-[#DF1279] to to-[#007FAD]" href="/client">
             Client page
           </a>
-          <a
-            className="border-green-500 border-2 px-5 rounded-full"
-            href="/calendar"
-          >
+          <a className="border-green-500 border-2 px-10 py-2 rounded-full text-green-500 bg-gradient-to-tr from-[#DF1279] to to-[#007FAD]" href="/calendar">
             Calendar page
           </a>
         </div>

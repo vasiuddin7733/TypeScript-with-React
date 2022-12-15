@@ -15,6 +15,11 @@ function Calendars() {
                 <span className='bold'>Selected Date:</span>{' '}
                 {date.toDateString()}
             </p>
+            <div className="flex justify-center items-center pt-10">
+                <a className="border-green-500 border-2 px-10 py-2 rounded-full text-green-500 bg-gradient-to-tr from-[#DF1279] to to-[#007FAD]" href="/">
+                    Home page
+                </a>
+            </div>
         </div>
     );
 }
