@@ -6,7 +6,7 @@ import '../styles/styles.css'
 const fetcher = () =>
   fetch('https://jsonplaceholder.typicode.com/users').then((res) => res.json())
 
-const About = () => {
+const Calculator = () => {
   const { isLoading, error, data: aboutInfo } = useQuery(['contacts'], fetcher)
   if (isLoading) return <p>Loading</p>
   if (error) return <p>An error occurred</p>
@@ -21,7 +21,7 @@ const About = () => {
     <PageLayout>
       <div className="text-blue-900 text-4xl flex justify-center items-center text-center mt-20 bg-about_bg flex-col bg-no-repeat h-[45rem] bg-cover">
         <div className="grid space-y-16">
-          <p className="">About page</p>
+          <p className="">Calculator page</p>
         </div>
         <div className="flex flex-col justify-center items-center my-8">
           <table>
@@ -59,4 +59,4 @@ const About = () => {
   )
 }
 
-export default About
+export default Calculator

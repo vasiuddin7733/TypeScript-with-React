@@ -1,6 +1,6 @@
 import Home from './components/home'
 import Service from './containers/service'
-import About from './containers/about'
+import About from './containers/calculator'
 import Contact from './containers/contact'
 import Form from './containers/form'
 import Client from './containers/apolloClient'
