@@ -29,25 +29,31 @@ const Home = () => {
             <p>{homeInfo.icon_url}</p>
           </div>
         </div>
-        <div className="flex justify-evenly pt-10">
-          <a className="border-green-500 border-2 px-10 py-2 rounded-full text-green-500 bg-gradient-to-tr from-[#DF1279] to to-[#007FAD]" href="/service">
-            Service page
-          </a>
-          <a className="border-green-500 border-2 px-10 py-2 rounded-full text-green-500 bg-gradient-to-tr from-[#DF1279] to to-[#007FAD]" href="/contact">
-            Contact page
-          </a>
-          <a className="border-green-500 border-2 px-10 py-2 rounded-full text-green-500 bg-gradient-to-tr from-[#DF1279] to to-[#007FAD]" href="/form">
-            Form page
-          </a>
-          <a className="border-green-500 border-2 px-10 py-2 rounded-full text-green-500 bg-gradient-to-tr from-[#DF1279] to to-[#007FAD]" href="/about">
-            Calculate page
-          </a>
-          <a className="border-green-500 border-2 px-10 py-2 rounded-full text-green-500 bg-gradient-to-tr from-[#DF1279] to to-[#007FAD]" href="/client">
-            Client page
-          </a>
-          <a className="border-green-500 border-2 px-10 py-2 rounded-full text-green-500 bg-gradient-to-tr from-[#DF1279] to to-[#007FAD]" href="/calendar">
-            Calendar page
-          </a>
+        <div className="w-full flex flex-col justify-center items-center">
+          <div className='flex justify-between space-x-5'>
+            <a className="border-green-500 border-2 px-10 py-2 rounded-full text-green-500 bg-gradient-to-tr from-[#DF1279] to to-[#007FAD]" href="/calendar">
+              Calendar page
+            </a>
+
+            <a className="border-green-500 border-2 px-10 py-2 rounded-full text-green-500 bg-gradient-to-tr from-[#DF1279] to to-[#007FAD]" href="/about">
+              Calculate page
+            </a>
+          </div>
+          <div className='flex justify-between pt-10 space-x-5'>
+            <a className="border-green-500 border-2 px-10 py-2 rounded-full text-green-500 bg-gradient-to-tr from-[#DF1279] to to-[#007FAD]" href="/client">
+              Client page
+            </a>
+            <a className="border-green-500 border-2 px-10 py-2 rounded-full text-green-500 bg-gradient-to-tr from-[#DF1279] to to-[#007FAD]" href="/form">
+              Form page
+            </a>
+            <a className="border-green-500 border-2 px-10 py-2 rounded-full text-green-500 bg-gradient-to-tr from-[#DF1279] to to-[#007FAD]" href="/useforms">
+              Useforms
+            </a>
+            <a className="border-green-500 border-2 px-10 py-2 rounded-full text-green-500 bg-gradient-to-tr from-[#DF1279] to to-[#007FAD]" href="/contact">
+              Contact page
+            </a>
+
+          </div>
         </div>
       </PageLayout>
     </div>

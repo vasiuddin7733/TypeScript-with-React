@@ -1,12 +1,13 @@
-import { PageLayout } from '../layout'
+import { PageLayout } from '../../layout'
 import { useQuery } from '@tanstack/react-query'
+import AppState from './useState'
 
 const fetcher = () =>
   fetch('https://random-facts1.p.rapidapi.com').then((res) =>
     res.json()
   )
 
-const Service = () => {
+const useForms = () => {
   const {
     isLoading,
     error,
@@ -20,10 +21,11 @@ const Service = () => {
     <PageLayout>
       <div className="text-blue-900 text-4xl flex justify-center items-center text-center mt-20 bg-service_bg bg-no-repeat h-[45rem] bg-cover">
         <div className="grid space-y-16">
-          <p>Service page</p>
+          <p>useforms</p>
         </div>
       </div>
       <p>{serviceData?.message}</p>
+      <AppState />
       <div className="flex justify-center items-center pt-10">
         <a className="border-green-500 border-2 px-10 py-2 rounded-full text-green-500 bg-gradient-to-tr from-[#DF1279] to to-[#007FAD]" href="/">
           Home page
@@ -33,4 +35,4 @@ const Service = () => {
   )
 }
 
-export default Service
+export default useForms
