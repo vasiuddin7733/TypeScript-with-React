@@ -159,22 +159,29 @@ export const App: FunctionComponent = () => {
   }
 
   return (
-    <StyledApp>
-      <Display value={display} hasMemory={memory !== 0} expression={typeof pendingOperator !== 'undefined' ? `${result}${pendingOperator}${waitingForOperand ? '' : display}` : ''} />
-      <Pad
-        onDigitButtonClick={onDigitButtonClick}
-        onPointButtonClick={onPointButtonClick}
-        onOperatorButtonClick={onOperatorButtonClick}
-        onChangeSignButtonClick={onChangeSignButtonClick}
-        onEqualButtonClick={onEqualButtonClick}
-        onAllClearButtonClick={onAllClearButtonClick}
-        onClearEntryButtonClick={onClearEntryButtonClick}
-        onMemoryRecallButtonClick={onMemoryRecallButtonClick}
-        onMemoryClearButtonClick={onMemoryClearButtonClick}
-        onMemoryPlusButtonClick={onMemoryPlusButtonClick}
-        onMemoryMinusButtonClick={onMemoryMinusButtonClick}
-      />
-    </StyledApp>
+    <div className='w-[25rem] mt-36'>
+      <StyledApp>
+        <Display value={display} hasMemory={memory !== 0} expression={typeof pendingOperator !== 'undefined' ? `${result}${pendingOperator}${waitingForOperand ? '' : display}` : ''} />
+        <Pad
+          onDigitButtonClick={onDigitButtonClick}
+          onPointButtonClick={onPointButtonClick}
+          onOperatorButtonClick={onOperatorButtonClick}
+          onChangeSignButtonClick={onChangeSignButtonClick}
+          onEqualButtonClick={onEqualButtonClick}
+          onAllClearButtonClick={onAllClearButtonClick}
+          onClearEntryButtonClick={onClearEntryButtonClick}
+          onMemoryRecallButtonClick={onMemoryRecallButtonClick}
+          onMemoryClearButtonClick={onMemoryClearButtonClick}
+          onMemoryPlusButtonClick={onMemoryPlusButtonClick}
+          onMemoryMinusButtonClick={onMemoryMinusButtonClick}
+        />
+      </StyledApp>
+      <div className="flex justify-center items-center pt-10 pr-24">
+        <a className="border-green-500 border-2 px-10 py-2 rounded-full text-green-500 bg-gradient-to-tr from-[#DF1279] to to-[#007FAD]" href="/">
+          Home page
+        </a>
+      </div>
+    </div>
   )
 }
 

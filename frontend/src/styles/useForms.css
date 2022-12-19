@@ -1,0 +1,18 @@
+.App {
+    font-family: sans-serif;
+    text-align: center;
+    height: 10vh;
+    width: 100vh;
+    padding: 10px;
+    margin-top: 25rem;
+}
+
+.App *+* {
+    margin-top: 10px;
+}
+
+.dark-mode {
+    background: black;
+    color: white;
+    width: 100vh;
+}
