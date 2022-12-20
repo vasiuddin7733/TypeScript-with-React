@@ -1,21 +1,10 @@
 import { PageLayout } from '../../layout'
-import { useQuery } from '@tanstack/react-query'
 import AppState from './useState'
+import NameForm from "./nameForms"
 
-const fetcher = () =>
-  fetch('https://random-facts1.p.rapidapi.com').then((res) =>
-    res.json()
-  )
+
 
 const useForms = () => {
-  const {
-    isLoading,
-    error,
-    data: serviceData,
-  } = useQuery(['contacts'], fetcher)
-  if (isLoading) return <p>Loading</p>
-  if (error) return <p>An error occurred</p>
-  console.log('servicedata', serviceData)
 
   return (
     <PageLayout>
@@ -24,7 +13,7 @@ const useForms = () => {
           <p>useforms</p>
         </div>
       </div>
-      <p>{serviceData?.message}</p>
+      <NameForm />
       <AppState />
       <div className="flex justify-center items-center pt-10">
         <a className="border-green-500 border-2 px-10 py-2 rounded-full text-green-500 bg-gradient-to-tr from-[#DF1279] to to-[#007FAD]" href="/">
