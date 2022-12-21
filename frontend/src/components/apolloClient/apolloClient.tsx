@@ -1,4 +1,4 @@
-import { PageLayout } from '../layout'
+import { PageLayout } from '../../layout'
 import { useQuery, gql } from '@apollo/client'
 
 const GET_LOCATIONS = gql`

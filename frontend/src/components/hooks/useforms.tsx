@@ -2,8 +2,6 @@ import { PageLayout } from '../../layout'
 import AppState from './useState'
 import NameForm from "./nameForms"
 
-
-
 const useForms = () => {
 
   return (
