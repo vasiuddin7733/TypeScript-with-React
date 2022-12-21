@@ -1,4 +1,4 @@
-import Home from './components/home'
+import Home from './components/home/home'
 import Useforms from './containers/useForms'
 import About from './containers/calculator'
 import Contact from './containers/contact'
