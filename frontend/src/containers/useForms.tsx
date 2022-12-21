@@ -1,5 +1,6 @@
-import { Useforms } from '../components'
+import { UseformsItem } from '../components'
 
-export default () => {
-  return <Useforms />
+const Useforms = () => {
+  return <UseformsItem />
 }
+export default Useforms

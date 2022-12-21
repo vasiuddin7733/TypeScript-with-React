@@ -1,5 +1,6 @@
-import { Contact } from '../components'
+import { ContactItem } from '../components'
 
-export default () => {
-  return <Contact />
+const Calendar = () => {
+  return <ContactItem />
 }
+export default Calendar

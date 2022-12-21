@@ -11,7 +11,7 @@ const StyledApp = styled.div`
   max-width: 320px;
 `
 
-export const App: FunctionComponent = () => {
+const CalculatorItem: FunctionComponent = () => {
   // Calculator's states
   const [memory, setMemory] = useState<number>(0)
   const [result, setResult] = useState<number>(0)
@@ -185,4 +185,4 @@ export const App: FunctionComponent = () => {
   )
 }
 
-export default App
+export default CalculatorItem

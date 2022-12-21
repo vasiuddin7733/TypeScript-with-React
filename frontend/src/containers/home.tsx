@@ -1,5 +1,6 @@
-import { Home } from '../components'
+import { HomeItem } from '../components'
 
-export default () => {
-  return <Home />
+const Home = () => {
+  return <HomeItem />
 }
+export default Home

@@ -1,5 +1,7 @@
-import { ApolloClient } from '../components'
+import { ApolloClientItem } from '../components'
 
-export default () => {
-  return <ApolloClient />
+const ApolloClient = () => {
+  return <ApolloClientItem />
 }
+
+export default ApolloClient;

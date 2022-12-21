@@ -1,5 +1,6 @@
-import { Calendar } from '../components'
+import { CalendarItem } from '../components'
 
-export default () => {
-  return <Calendar />
+const Calendar = () => {
+  return <CalendarItem />
 }
+export default Calendar
