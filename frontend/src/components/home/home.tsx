@@ -35,8 +35,8 @@ const Home = () => {
               Calendar page
             </a>
 
-            <a className="border-green-500 border-2 px-10 py-2 rounded-full text-green-500 bg-gradient-to-tr from-[#DF1279] to to-[#007FAD]" href="/about">
-              Calculate page
+            <a className="border-green-500 border-2 px-10 py-2 rounded-full text-green-500 bg-gradient-to-tr from-[#DF1279] to to-[#007FAD]" href="/calculator">
+              Calculator page
             </a>
           </div>
           <div className='flex justify-between pt-10 space-x-5'>

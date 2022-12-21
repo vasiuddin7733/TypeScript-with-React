@@ -1,5 +1,7 @@
-import { Calculator } from '../components'
+import { CalculatorItem } from '../components'
 
-export default () => {
-  return <Calculator />
+const Calculator = () => {
+  return <CalculatorItem />
 }
+
+export default Calculator

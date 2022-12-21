@@ -1,5 +1,6 @@
-import { Form } from '../components'
+import { FormItem } from '../components'
 
-export default () => {
-  return <Form />
+const Form = () => {
+  return <FormItem />
 }
+export default Form
