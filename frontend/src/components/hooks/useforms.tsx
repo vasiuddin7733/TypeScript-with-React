@@ -1,6 +1,7 @@
 import { PageLayout } from '../../layout'
 import AppState from './useState'
 import NameForm from "./nameForms"
+import UseEffect from "./useEffect"
 
 const useForms = () => {
 
@@ -12,6 +13,7 @@ const useForms = () => {
         </div>
       </div>
       <NameForm />
+      <UseEffect />
       <AppState />
       <div className="flex justify-center items-center pt-10">
         <a className="border-green-500 border-2 px-10 py-2 rounded-full text-green-500 bg-gradient-to-tr from-[#DF1279] to to-[#007FAD]" href="/">
