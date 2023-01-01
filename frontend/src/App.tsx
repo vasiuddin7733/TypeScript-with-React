@@ -1,4 +1,5 @@
 import Home from './components/home/home'
+import Hello from './components/basic/hello'
 import Useforms from './containers/useForms'
 import Contact from './containers/contact'
 import Form from './containers/form'
@@ -12,6 +13,7 @@ function Router() {
   return (
     <Routes>
       <Route index element={<Home />} />
+      <Route path="/hello" index element={<Hello />} />
       <Route path="/useforms" element={<Useforms />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/form" element={<Form />} />
