@@ -7,6 +7,10 @@ const idea = () => {
     <div>idea2</div>
     <div>idea3</div>
     <div>idea4</div>
+    <div>idea1</div>
+    <div>idea2</div>
+    <div>idea3</div>
+    <div>idea4</div>
    </div>
   )
 }
