@@ -52,6 +52,9 @@ const Home = () => {
             <a className="border-green-500 border-2 px-10 py-2 rounded-full text-green-500 bg-gradient-to-tr from-[#DF1279] to to-[#007FAD]" href="/contact">
               Contact page
             </a>
+            <a className="border-green-500 border-2 px-10 py-2 rounded-full text-green-500 bg-gradient-to-tr from-[#DF1279] to to-[#007FAD]" href="/hello">
+              Hello page
+            </a>
 
           </div>
         </div>
